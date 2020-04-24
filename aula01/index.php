@@ -8,13 +8,13 @@
 </head>
 <body>
     <?php
-        //para criar uma variável no PHP basta utilizar $ e o nome da vari´åvel que deseja em seguinda
+        // para criar uma variável no PHP basta utilizar $ e o nome da variável que deseja em seguida
         $titulo = "Primeira Aula e PHP";
     ?>
 
     <h1>
         <?php
-            //para exibir algo na tela com PHP utilizamos o echo
+            // para exibir algo na tela com PHP utilizamos o echo
             echo $titulo;
         ?>
     </h1>
@@ -28,7 +28,7 @@
     
     <?php
         function podeVotar ($idadeEleitor) {
-            //pipe = ||
+            // pipe = ||
             if ($idadeEleitor >= 16 && $idadeEleitor < 18 || $idadeEleitor > 70) {
                 return "Voto Facultativo";
             } else if ($idadeEleitor >= 18 && $idadeEleitor <= 70){
@@ -43,7 +43,7 @@
     
     <h1>Função</h1>
 
-    <?php echo podeVotar(11); ?>
+    <?php echo podeVotar (11); ?>
 
     <br><hr>
 
@@ -116,10 +116,18 @@
     <br><p>Array Associativo</p>
 
     <?php
-        $usuario = [
-            "nome" => "George",
-            "email" => "george_hfc@yahoo.com.br",
-            "senha" => "123456"
+        $listaDeUsuarios = [
+            "usuario1" => [
+                "nome" => "George",
+                "email" => "george_hfc@yahoo.com.br",
+                "senha" => "123456"
+            ],
+
+            "usuario2" => [
+                "nome" => "Henrique",
+                "email" => "gegeorgee@gmail.com",
+                "senha" => "123456"
+            ]
         ];
     ?>
 </body>
